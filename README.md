@@ -1,4 +1,4 @@
-![logo](./img/logo.png)
+![logo](https://haixin-1300602599.cos.ap-guangzhou.myqcloud.com/logo.png)
 
 You can use it as a convenient tool, or you can deploy it to the cloud and access your services anytime, anywhere, so start trying
 
@@ -20,4 +20,4 @@ $ hixnav
 
 ### Start using it
 
-![img](./img/4632.png)
+![img](https://haixin-1300602599.cos.ap-guangzhou.myqcloud.com/4632.png)
