@@ -1,78 +1,151 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>HixNav</title>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<title>HixNav</title>
 	<!-- import CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<!-- import JavaScript -->
-	<!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
-	</head>
-	<style>
-	.page{
+	<!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+
+
+</head>
+<style>
+	.page {
 		margin: 0;
 		padding: 0;
 	}
-		.el-header {
-			display: block;
-			background-color: #FFFFFF;
-			color: #333;
-			line-height: 60px;
-			font-size: 26px;
-			font-weight: 800;
-		}
-		.header-title{
-			width: 1024px;
-		}
-		.el-footer {
-			display: block;
-			background-color: #212930;
-			color: #6C7D8F;
-			text-align: center;
-			line-height: 60px;
-		}
-		.el-main{
-			margin: 0;
-			padding: 0;
-		}
-		.main-1{
-			width: 100%;
-			height: 360px;
-			background-color: #2F80ED;
-		}
-		.main-2{
-			width: 100%;
-			background-color: #FFFFFF;
-		}
-		
-	</style>
-	<body class="page">
-		<el-container>
-			<el-header class="el-header">
-				<el-row :gutter="20" class="header-title">
-				  <el-col :span="16">HixNav</el-col>
-				  <el-col :span="4" :offset="16"><i class="el-icon-cloudy"></i></el-col>
-				  
-				</el-row>
-			</el-header>
-			<el-main class="el-main">
-				<section class="main-1">
-					<div style="color: #FFFFFF;font-size: 36px;text-align: center;padding-top:48px">Gather Interesting Resources Here</div>
-					<div style="color: #FFFFFF;font-size: 16px;text-align: center;padding-top:48px">
-						<el-button type="primary">Download For Windows</el-button>
-						<el-button plain style="border: #FFFFFF;">Download For Linux</el-button>
-					</div>
-				</section>
-				<section class="main-2">
-					  <el-button type="primary">主要按钮</el-button>
-					  <el-button type="success">成功按钮</el-button>
-					  <el-button type="info">信息按钮</el-button>
-					  <el-button type="warning">警告按钮</el-button>
-				</section>
-			</el-main>
-			<el-footer class="el-footer">Power By HixNav ©2022 </el-footer>
-		</el-container>
-	</body>
+
+	.el-header {
+		display: block;
+		background-color: #FFFFFF;
+		color: #333;
+		line-height: 60px;
+		font-size: 26px;
+		font-weight: 800;
+	}
+
+	.header-title {
+		width: 1024px;
+		margin-left: 20%;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header-title-logo {
+		flex: 1;
+		margin-top: 11px;
+	}
+
+	h1 {
+		width: 50px;
+		height: 50px;
+		display: block;
+		background: url(./img/微信图片_20220305163647.png);
+		background-size: cover;
+	}
+
+
+
+	.el-footer {
+		display: block;
+		background-color: #212930;
+		color: #6C7D8F;
+		text-align: center;
+		line-height: 60px;
+	}
+
+	.el-main {
+		margin: 0;
+		padding: 0;
+	}
+
+	.main-1 {
+		width: 100%;
+		height: 360px;
+		background-color: #2F80ED;
+	}
+
+	.main-2 {
+		width: 100%;
+		background-color: #FFFFFF;
+	}
+
+	.el-main .btn1 a {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+	.el-main .btn1 a:hover {
+		color: red;
+	}
+
+	.el-main .btn2 a {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+	.el-main .btn2 a:hover {
+		color: red;
+	}
+</style>
+
+<body class="page">
+	<!-- 这是头部 -->
+	<div class="el-header">
+		<div class="header-title">
+
+			<!-- 导航 -->
+			<ul class="nav">
+				<!-- logo -->
+				<div class="header-title-logo">
+					<h1><a href="#">111</a></h1>
+				</div>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Active</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 这是中间的部分 -->
+	<div class="el-main">
+		<!-- 这是中间第一部分 -->
+		<section class="main-1">
+			<div style="color: #FFFFFF;font-size: 36px;text-align: center;padding-top:48px">Gather
+				Interesting
+				Resources Here</div>
+			<div style="color: #FFFFFF;font-size: 16px;text-align: center;padding-top:48px">
+				<el-button type="primary" class="btn1"><a href="">Download For Windows></a>
+				</el-button>
+				<el-button plain style="border: #FFFFFF;" class="btn2"><a href="">aDownload For
+						Linux</a>
+				</el-button>
+			</div>
+		</section>
+		<!-- 这是中间第二部分 -->
+		<section class="main-2">
+
+		</section>
+		<!-- 这是中间第三部分 -->
+		<div></div>
+	</div>
+	<!-- 这是尾部的部分 -->
+	<div class="el-footer">Power By HixNav ©2022 </div>
+</body>
 
 
 </html>
