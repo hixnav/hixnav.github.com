@@ -1,1 +1,203 @@
-# GET START
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>HixNav</title>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- import JavaScript -->
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+
+
+</head>
+<style>
+    li {
+        list-style: none;
+    }
+
+    .page {
+        margin: 0;
+        padding: 0;
+    }
+
+    .el-header {
+        display: block;
+        background-color: #FFFFFF;
+        color: #333;
+        line-height: 60px;
+    }
+
+    .header-title {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .header-title-logo {
+        margin-top: 4px;
+    }
+
+    .header-title-nav {}
+
+    h1 {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background: url(./img/微信图片_20220305163647.png);
+        background-size: cover;
+    }
+
+
+
+    .el-footer {
+        display: block;
+        background-color: #212930;
+        color: #6C7D8F;
+        text-align: center;
+        line-height: 60px;
+        margin-top: 100px;
+    }
+
+    .el-main {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .main-1 {
+        width: 100%;
+        height: 254px;
+        background-color: #2F80ED;
+    }
+
+    .main-2 {
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .el-main .btn1 a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .el-main .btn1 a:hover {
+        color: red;
+    }
+
+    .el-main .btn2 a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .el-main .btn2 a:hover {
+        color: red;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .main-2 {
+        min-height: 360px;
+        font-size: 46px;
+        color: #212930;
+
+    }
+
+    .main-2-title {
+        padding-top: 78px;
+        padding-bottom: 20px;
+    }
+
+    .main-2-text {
+        font-size: 16px;
+        color: #212930;
+    }
+
+    .main-bag {
+        background-color: #333;
+        color: white;
+    }
+
+    .use-title {
+        padding-top: 60px;
+    }
+
+    .use-desc {
+
+        padding-top: 10px;
+        font-size: 14px;
+        box-shadow: 20px, 20px, 20px, black
+    }
+
+    .main-2-text_img {
+        /* border: 1px solid #000; */
+        margin-top: 20px;
+        border-radius: 2%;
+    }
+</style>
+
+<body class="page">
+    <!-- 这是头部 -->
+    <div class="el-header">
+        <div class="header-title">
+
+            <!-- 导航 -->
+            <div class="nav">
+                <div class="header-title-logo">
+                    <h1><a href="#"><img class="logo" src="./img/logo.png" alt="logo"></a></h1>
+                </div>
+                <ul class="header-title-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://github.com/hixnav/hixnav.github.com">
+                            <div class="media"><img style="width: 40px;line-height: 60px;margin-top: 10px;"
+                                    src="./img/github-icon.ico" alt="github"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- 这是中间的部分 -->
+    <div class="el-main">
+        <!-- 这是中间第一部分 -->
+        <section class="main-1">
+            <div style="color: #FFFFFF;font-size: 48px;text-align: center;padding-top:78px">Simple steps </div>
+        </section>
+        <section class="main-2">
+            <div class="main-2-title header-title">Try It</div>
+            <div class="main-2-text header-title">
+                <div class="use-title"><b>Get HixNav</b></div>
+                <div class="use-desc">下载windows版本，点击<a href="./hixnav.exe">下载</a>，下载Linux版本，点击<a href="。/hixnav">下载</a>
+                </div>
+                <div></div>
+            </div>
+            <div class="main-2-text header-title">
+                <div class="use-title"><b>Simple configuration</b></div>
+                <div class="use-desc">你需要一个Mysql的数据库，以及一个对象存储服务，这些服务可以从云服务厂商那里获取。如果你已经获取到了，那么现在开始配置</div>
+
+            </div>
+            <div class="main-2-text header-title">
+                <div class="use-title"><b>Try to run</b></div>
+                <div class="use-desc">$ hixnav</div>
+            </div>
+            <div class="main-2-text header-title">
+                <div class="use-title"><b>Start using it</b></div>
+                <div class="use-desc main-2-text_img"><img src="./img/4632.png" alt="" style="width: 100%;padding: 10px;"></div>
+            </div>
+        </section>
+    </div>
+    <!-- 这是尾部的部分 -->
+    <div class="el-footer">Power By HixNav ©2022 </div>
+</body>
+
+
+</html>

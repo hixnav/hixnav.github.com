@@ -13,6 +13,10 @@
 
 </head>
 <style>
+	li {
+		list-style: none;
+	}
+
 	.page {
 		margin: 0;
 		padding: 0;
@@ -23,24 +27,24 @@
 		background-color: #FFFFFF;
 		color: #333;
 		line-height: 60px;
-		font-size: 26px;
-		font-weight: 800;
 	}
 
 	.header-title {
 		width: 1024px;
-		margin-left: 20%;
+		margin: 0 auto;
 	}
 
 	.nav {
 		display: flex;
 		justify-content: space-between;
+
 	}
 
 	.header-title-logo {
-		flex: 1;
-		margin-top: 11px;
+		margin-top: 4px;
 	}
+
+	.header-title-nav {}
 
 	h1 {
 		width: 50px;
@@ -64,6 +68,7 @@
 		margin: 0;
 		padding: 0;
 	}
+
 
 	.main-1 {
 		width: 100%;
@@ -93,6 +98,31 @@
 	.el-main .btn2 a:hover {
 		color: red;
 	}
+
+	.logo {
+		width: 180px;
+	}
+
+	.main-2 {
+		min-height: 360px;
+		font-size: 46px;
+		color: #212930;
+
+	}
+
+	.main-2-title {
+		padding-top: 78px;
+		padding-bottom: 20px;
+	}
+
+	.main-2-text {
+		font-size: 20px;
+		color: #c0c0c0;
+	}
+	.main-bag{
+		background-color: #333;
+		color: white;
+	}
 </style>
 
 <body class="page">
@@ -101,47 +131,56 @@
 		<div class="header-title">
 
 			<!-- 导航 -->
-			<ul class="nav">
-				<!-- logo -->
+			<div class="nav">
 				<div class="header-title-logo">
-					<h1><a href="#">111</a></h1>
+					<h1><a href="#"><img class="logo" src="./img/logo.png" alt="logo"></a></h1>
 				</div>
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Active</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled">Disabled</a>
-				</li>
-			</ul>
+				<ul class="header-title-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="https://github.com/hixnav/hixnav.github.com">
+							<div class="media"><img style="width: 40px;line-height: 60px;margin-top: 10px;"
+									src="./img/github-icon.ico" alt="github"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
 		</div>
 	</div>
 	<!-- 这是中间的部分 -->
 	<div class="el-main">
 		<!-- 这是中间第一部分 -->
 		<section class="main-1">
-			<div style="color: #FFFFFF;font-size: 36px;text-align: center;padding-top:48px">Gather
-				Interesting
-				Resources Here</div>
-			<div style="color: #FFFFFF;font-size: 16px;text-align: center;padding-top:48px">
-				<el-button type="primary" class="btn1"><a href="">Download For Windows></a>
-				</el-button>
-				<el-button plain style="border: #FFFFFF;" class="btn2"><a href="">aDownload For
-						Linux</a>
-				</el-button>
+			<div style="color: #FFFFFF;font-size: 48px;text-align: center;padding-top:78px">Gather
+				Interesting Resources Here</div>
+			<div style="text-align: center;;">
+				<div style="color: #FFFFFF;font-size: 16px;text-align: center;padding-top:48px">
+					<span style="padding: 40px;">
+						<a href=""> <button type="button" class="btn btn-success btn-lg">Download</button></a>
+					</span>
+					<a href=""> <button type="button" class="btn btn-secondary btn-lg">Get Start</button></a>
+
+					</el-button>
+				</div>
+				<div style="color: #FFFFFF;font-size: 16px;">
+					<a href="" style="color: #FFF;"><em><u>Download For Linux</u></em></a>
+				</div>
 			</div>
 		</section>
 		<!-- 这是中间第二部分 -->
-		<section class="main-2">
-
+		<section class="main-2 ">
+			<div class="main-2-title header-title">导航 快链 如此便捷</div>
+			<div class="main-2-text header-title">全面集成导航和快链，工作如此便捷</div>
 		</section>
 		<!-- 这是中间第三部分 -->
-		<div></div>
+		<section class="main-2 main-bag">
+			<div class="main-2-title header-title">笔记 云图 存储</div>
+			<div class="main-2-text header-title">轻松的将图片、文件、笔记保存起来</div>
+		</section>
+		<section class="main-2 ">
+			<div class="main-2-title header-title">便捷 清爽 完全自定义</div>
+			<div class="main-2-text header-title"> 自由的将资源保存在任何地方，从不受限，只要你愿意</div>
+		</section>
 	</div>
 	<!-- 这是尾部的部分 -->
 	<div class="el-footer">Power By HixNav ©2022 </div>
