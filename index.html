@@ -20,6 +20,7 @@
 	.page {
 		margin: 0;
 		padding: 0;
+		overflow-x:hidden;
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	}
 
@@ -108,10 +109,12 @@
 	}
 
 	.text a {
-		display: block;
+		display: inline-block;
 		color: white;
-		margin-left: 592px;
-		margin-top: 10px;
+		margin-top: 20px;
+		padding-left: 20px;
+		/* margin-left: 592px; */
+		/* margin-top: 130px; */
 
 	}
 
@@ -153,14 +156,15 @@
 					<span style="padding: 40px;">
 						<a href="/hixnav.exe"> <button type="button"
 								class="btn btn-success btn-lg">Download</button></a>
+								<!-- <em><a href="#"><u>Download For Linux</u></a></em> -->
+								<span class="text"><em><a href="#"><u>Download For Linux</u></a></em></span>
+
 					</span>
+					<!-- <span class="text"><em><a href="#"><u>Download For Linux</u></a></em></span> -->
 					<a href="/get-start.html"> <button type="button" class="btn btn-secondary btn-lg">Get
 							Start</button></a>
 
 					</el-button>
-				</div>
-				<div class="text">
-					<em><a href="#"><u>Download For Linux</u></a></em>
 				</div>
 			</div>
 		</section>
