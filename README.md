@@ -4,7 +4,7 @@ You can use it as a convenient tool, or you can deploy it to the cloud and acces
 
 海芯导航 - 你可以把它作为一个便捷工具来使用，或者你可以把它部署到云上，随时随地访问你的服务，那么开始尝试吧
 
-# 开始使用
+## 开始使用
 ### 获取HixNav
 
 获取windows版本，点击<a href="./hixnav.exe">下载</a>
@@ -42,3 +42,7 @@ $ hixnav
 > 系统默认使用80端口
 
 http://{ip}
+
+## 反馈
+
+邮箱：kefu@hixnav.xyz
