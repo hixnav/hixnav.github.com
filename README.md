@@ -2,13 +2,18 @@
 
 You can use it as a convenient tool, or you can deploy it to the cloud and access your services anytime, anywhere, so start trying
 
-# Try It
-### Get HixNav
+海芯导航 - 你可以把它作为一个便捷工具来使用，或者你可以把它部署到云上，随时随地访问你的服务，那么开始尝试吧
 
-下载windows版本，点击<a href="./hixnav.exe">下载</a>，下载Linux版本，点击<a href="./hixnav">下载</a>
-需要源码<a href="https://github.com/hixnav/hixnav">点击</a>
+# 开始使用
+### 获取HixNav
 
-### Simple configurations
+获取windows版本，点击<a href="./hixnav.exe">下载</a>
+
+获取Linux版本，点击<a href="./hixnav">下载</a>
+
+查看源码，请访问仓库<a href="https://github.com/hixnav/hixnav">HixNav</a>
+
+### 配置
 
 >你需要一个Mysql的数据库，以及一个对象存储服务，这些服务可以从云服务厂商那里获取。
 
@@ -26,8 +31,14 @@ COSSecretID
 COSSecretKey
 ``` 
 
-### Try to run
+### 运行
 
 ```shell
 $ hixnav
 ```
+
+### 访问
+
+> 系统默认使用80端口
+
+http://{ip}
