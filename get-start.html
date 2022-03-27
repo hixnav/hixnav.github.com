@@ -17,37 +17,39 @@
     li {
         list-style: none;
     }
-
+    
     .page {
         margin: 0;
         padding: 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
+    
     .el-header {
         display: block;
         background-color: #FFFFFF;
         color: #333;
         line-height: 60px;
     }
-
-    .header-title {
-        width: 1024px;
-        margin: 0 auto;
+    
+    .el-header {
+        display: block;
+        background-color: #FFFFFF;
+        color: #333;
+        line-height: 60px;
+        margin: 0 1rem;
     }
-
+    
     .nav {
         display: flex;
         justify-content: space-between;
-
     }
-
+    
     .header-title-logo {
         margin-top: 4px;
     }
-
+    
     .header-title-nav {}
-
+    
     h1 {
         width: 50px;
         height: 50px;
@@ -55,96 +57,86 @@
         background: url(./img/微信图片_20220305163647.png);
         background-size: cover;
     }
-
-
-
+    
     .el-footer {
         display: block;
         background-color: #212930;
         color: #6C7D8F;
         text-align: center;
         line-height: 60px;
-        margin-top: 100px;
+        margin-top: 2rem;
     }
-
+    
     .el-main {
         margin: 0;
         padding: 0;
     }
-
-
+    
     .main-1 {
         width: 100%;
         height: 254px;
         background-color: #2F80ED;
     }
-
+    
     .main-2 {
         width: 100%;
+        padding: 0 1rem;
+        font-size: 46px;
+        color: #212930;
         background-color: #FFFFFF;
     }
-
+    
     .el-main .btn1 a {
         text-decoration: none;
         color: #FFFFFF;
     }
-
+    
     .el-main .btn1 a:hover {
         color: red;
     }
-
+    
     .el-main .btn2 a {
         text-decoration: none;
         color: #FFFFFF;
     }
-
+    
     .el-main .btn2 a:hover {
         color: red;
     }
-
+    
     .logo {
         width: 180px;
     }
-
-    .main-2 {
-        min-height: 360px;
-        font-size: 46px;
-        color: #212930;
-
-    }
-
+    
     .main-2-title {
-        padding-top: 78px;
+        padding-top: 2rem;
         padding-bottom: 20px;
     }
-
+    
     .main-2-text {
         font-size: 16px;
         color: #212930;
     }
-
+    
     .main-bag {
         background-color: #333;
         color: white;
     }
-
-    .use-title {
-        padding-top: 60px;
-    }
-
+    
+    .use-title {}
+    
     .use-desc {
-
         padding-top: 10px;
         font-size: 14px;
         box-shadow: 20px, 20px, 20px, black
     }
-
+    
     .main-2-text_img {
         /* border: 1px solid #000; */
         margin-top: 20px;
         border-radius: 2%;
     }
-
+    
     .main-2-text_img>img {
         display: block;
         box-shadow: 3px 2px 3px 2px #c0c0c0;
@@ -160,7 +152,9 @@
             <!-- 导航 -->
             <div class="nav">
                 <div class="header-title-logo">
-                    <h1><a href="/"><img class="logo" src="./img/logo.png" alt="logo"></a></h1>
+                    <h1>
+                        <a href="/"><img class="logo" src="./img/logo.png" alt="logo"></a>
+                    </h1>
                 </div>
                 <ul class="header-title-nav">
                     <li class="nav-item">
@@ -190,36 +184,38 @@
         <section class="main-2">
             <div class="main-2-title header-title">Try It</div>
             <div class="main-2-text header-title">
-                <div class="use-title"><b>Get HixNav</b></div>
-                <div class="use-desc">
-                    To download the Windows version, click <a href="./hixnav.exe">Download</a>. To download the Linux version, click <a href="./hixnav">Download</a>
-                </div>
-                <div></div>
+                <h3 class="use-title">Get HixNav</h2>
+                    <div div class="alert alert-success" role="alert">
+                        To download the Windows version, click <a href="./hixnav.exe">Download</a>. To download the Linux version, click <a href="./hixnav">Download</a>
+                    </div>
+                    <div></div>
             </div>
             <div class="main-2-text header-title">
-                <div class="use-title"><b>Simple configuration</b></div>
-                <div class="use-desc">You need a Mysql database, as well as an object storage service, which can be obtained from cloud service vendors.  If you already have it, configure it now.</div>
+                <h3>Simple configuration</h3>
+                <div class="alert alert-success" role="alert">You need a Mysql database, as well as an object storage service, which can be obtained from cloud service vendors. If you already have it, configure it now.</div>
+                <div class="alert alert-secondary" role="alert">
+                    <h6>mysql</h6>
+                    <div style="word-break: break-all;">DNS // DNS={user}:{password}@tcp({host}:{port})/haixin?charset=utf8mb4&parseTime=True&loc=Local</div>
 
+                    <h6>tecentCOS</h6>
+                    <div>COS // COS=https://%s-{your}.myqcloud.com/</div>
+                    <div>COSSecretID</div>
+                    <div>COSSecretKey</div>
+                </div>
             </div>
             <div class="main-2-text header-title">
-                <div class="use-title"><b>Try to run</b></div>
+                <h3 class="use-title">Try to run</h3>
                 <div class="use-desc">
                     <div class="alert alert-secondary" role="alert">
                         $ hixnav
                     </div>
-                       
-                    
+
+
                 </div>
-            </div>
-            <div class="main-2-text header-title">
-                <div class="use-title"><b>Start using it</b></div>
-                <div class="use-desc main-2-text_img"><img src="./img/4632.png" alt=""
-                        style="width: 80%;padding: 10px;"></div>
-            </div>
         </section>
-    </div>
-    <!-- 这是尾部的部分 -->
-    <div class="el-footer">Power By HixNav ©2022 反馈：kefu@hixnav.xyz</div>
+        </div>
+        <!-- 这是尾部的部分 -->
+        <div class="el-footer">Power By HixNav ©2022 Email: kefu@hixnav.xyz</div>
 </body>
 
 
