@@ -45,4 +45,4 @@ http://{ip}
 
 ## 反馈
 
-邮箱：kefu@hixnav.xyz
+邮箱：kefu@iflet.cn
