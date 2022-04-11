@@ -1,3 +1,5 @@
+# 该仓库已迁移至hixnav仓库的gh-pages分支，感谢支持
+
 ![logo](http://hixnav.github.io/img/logo.png)
 
 You can use it as a convenient tool, or you can deploy it to the cloud and access your services anytime, anywhere, so start trying
