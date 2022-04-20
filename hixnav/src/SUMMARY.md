@@ -1,5 +1,5 @@
 ![Hixnav Logo](./img/logo.png)
 
-# Summary
+# 目录
 
-- [Chapter 1](./安装.md)
+- [安装](./install.md)
