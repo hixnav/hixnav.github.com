@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Hixnav使用指南</title>
-        <meta name="robots" content="noindex" />
+        <title>介绍 - Hixnav使用指南</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="关于Hixnav的相关说明.">
@@ -76,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduce.html"><strong aria-hidden="true">1.</strong> 介绍</a></li><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">2.</strong> 安装</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduce.html" class="active"><strong aria-hidden="true">1.</strong> 介绍</a></li><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">2.</strong> 安装</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -141,45 +140,23 @@
 <blockquote>
 <p>反馈：kefu@iflet.cn</p>
 </blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="安装"><a class="header" href="#安装">安装</a></h1>
-<h3 id="获取hixnav"><a class="header" href="#获取hixnav">获取HixNav</a></h3>
-<p>获取windows版本，点击<a href="./hixnav.exe">下载</a></p>
-<p>获取Linux版本，点击<a href="./hixnav">下载</a></p>
-<p>查看源码，请访问仓库<a href="https://github.com/hixnav/hixnav">HixNav</a></p>
-<h3 id="配置"><a class="header" href="#配置">配置</a></h3>
-<blockquote>
-<p>你需要一个Mysql的数据库，以及一个对象存储服务，这些服务可以从云服务厂商那里获取。</p>
-</blockquote>
-<h6 id="配置系统环境变量"><a class="header" href="#配置系统环境变量">配置系统环境变量</a></h6>
-<pre><code class="language-shell"># mysql
-# DNS={user}:{password}@tcp({host}:{port})/haixin?charset=utf8mb4&amp;parseTime=True&amp;loc=Local
-DNS
-
-# tecentCOS
-# COS=https://%s-{your}.myqcloud.com/
-COS 
-COSSecretID
-COSSecretKey
-</code></pre>
-<h3 id="运行"><a class="header" href="#运行">运行</a></h3>
-<pre><code class="language-shell">$ hixnav
-</code></pre>
-<h3 id="访问"><a class="header" href="#访问">访问</a></h3>
-<blockquote>
-<p>系统默认使用80端口</p>
-</blockquote>
-<p>http://{ip}</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="next" href="install.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="next" href="install.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -195,10 +172,5 @@ COSSecretKey
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
     </body>
 </html>
