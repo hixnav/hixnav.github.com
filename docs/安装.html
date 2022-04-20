@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html" class="active"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Summary</li><li class="chapter-item expanded "><a href="安装.html" class="active"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,7 +134,40 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h1 id="安装"><a class="header" href="#安装">安装</a></h1>
+<p><img src="http://hixnav.github.io/img/logo.png" alt="logo" /></p>
+<p>You can use it as a convenient tool, or you can deploy it to the cloud and access your services anytime, anywhere, so start trying</p>
+<p>海芯导航 - 你可以把它作为一个便捷工具来使用，或者你可以把它部署到云上，随时随地访问你的服务，那么开始尝试吧</p>
+<h2 id="开始使用"><a class="header" href="#开始使用">开始使用</a></h2>
+<h3 id="获取hixnav"><a class="header" href="#获取hixnav">获取HixNav</a></h3>
+<p>获取windows版本，点击<a href="./hixnav.exe">下载</a></p>
+<p>获取Linux版本，点击<a href="./hixnav">下载</a></p>
+<p>查看源码，请访问仓库<a href="https://github.com/hixnav/hixnav">HixNav</a></p>
+<h3 id="配置"><a class="header" href="#配置">配置</a></h3>
+<blockquote>
+<p>你需要一个Mysql的数据库，以及一个对象存储服务，这些服务可以从云服务厂商那里获取。</p>
+</blockquote>
+<h6 id="配置系统环境变量"><a class="header" href="#配置系统环境变量">配置系统环境变量</a></h6>
+<pre><code class="language-shell"># mysql
+# DNS={user}:{password}@tcp({host}:{port})/haixin?charset=utf8mb4&amp;parseTime=True&amp;loc=Local
+DNS
+
+# tecentCOS
+# COS=https://%s-{your}.myqcloud.com/
+COS 
+COSSecretID
+COSSecretKey
+</code></pre>
+<h3 id="运行"><a class="header" href="#运行">运行</a></h3>
+<pre><code class="language-shell">$ hixnav
+</code></pre>
+<h3 id="访问"><a class="header" href="#访问">访问</a></h3>
+<blockquote>
+<p>系统默认使用80端口</p>
+</blockquote>
+<p>http://{ip}</p>
+<h2 id="反馈"><a class="header" href="#反馈">反馈</a></h2>
+<p>邮箱：kefu@iflet.cn</p>
 
                     </main>
 
@@ -150,22 +183,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
