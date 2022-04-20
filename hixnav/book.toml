@@ -1,0 +1,10 @@
+[book]
+authors = ["wennmu"]
+language = "zh-CN"
+multilingual = false
+src = "src"
+title = "Hixnav使用指南"
+description = "关于Hixnav的相关说明."
+
+[build]
+build-dir = "../docs"
