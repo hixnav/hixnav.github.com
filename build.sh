@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd hixnav && ../bin/mdbook.exe build
+cd hixnav && ../bin/mdbook.exe clean && ../bin/mdbook.exe build
