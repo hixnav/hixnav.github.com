@@ -2,6 +2,8 @@
 
 > 本说明书使用mdbook编写
 
+[阅读说明](https://hixnav.github.io/)
+
 ## 编写说明
 
 ### 预览
