@@ -1,10 +1,12 @@
 <img src="http://hixnav.github.io/img/logo.png" alt="hixnav logo" width="320px"/>
 
-You can use it as a convenient tool, or you can deploy it to the cloud and access your services anytime, anywhere, so start trying
+> 海芯导航涉及多种语言和技术：vue、nodejs、golang、mysql、oss、docker、json等。
+> 
+> 它提供了一系列集成平台，可以方便地进行定制d导航、云链、云存储、云图和云账户等工作。
+> 
+> 自由并逐渐变的强大。
 
-海芯导航 - 你可以把它作为一个便捷工具来使用，或者你可以把它部署到云上，随时随地访问你的服务，那么开始尝试吧
-
-##### 反馈
+##### 邮件反馈
 ```shell
 kefu@iflet.cn
 ```
