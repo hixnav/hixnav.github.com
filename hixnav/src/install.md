@@ -1,42 +1,29 @@
 # 安装
 
-### 获取HixNav
+### 获取应用
 
-获取windows版本，点击<a href="./hixnav.exe">下载</a>
+点击[这里](https://github.com/hixnav/hixnav/releases)下载任何系统平台的发行版本。
 
-获取Linux版本，点击<a href="./hixnav">下载</a>
+点击[这里](https://github.com/hixnav/hixnav/pkgs/container/hixnav)下载Docker镜像。
 
-查看源码，请访问仓库<a href="https://github.com/hixnav/hixnav">HixNav</a>
-
-### 配置
-
->你需要一个Mysql的数据库，以及一个对象存储服务，这些服务可以从云服务厂商那里获取。
-
-###### 配置系统环境变量
-
-```shell
-# mysql
-# DNS={user}:{password}@tcp({host}:{port})/haixin?charset=utf8mb4&parseTime=True&loc=Local
-DNS
-
-# tecentCOS
-# COS=https://%s-{your}.myqcloud.com/
-COS 
-COSSecretID
-COSSecretKey
-``` 
-
-### 运行
+### 运行应用
 
 ```shell
 $ hixnav
 ```
 
-### 访问
+### 如何访问？
 
 > 系统默认使用80端口
 
 http://{ip}
 
+### 初次启动需要配置
 
+
+>你需要准备一个Mysql的数据库，和一个对象存储服务（目前只支持腾讯云存储服务），这些服务可以从云服务厂商那里获取。
+
+访问启动后的网站，在“我的-设置中心”配置您的数据库信息和存储信息。
+
+> 配置会被自动保存在服务本地，首次配置请点击“初始化”按钮完成系统初始化操作。
 
