@@ -1,10 +1,18 @@
 <img src="http://hixnav.github.io/img/logo.png" alt="hixnav logo" width="320px"/>
 
-> 海芯导航涉及多种语言和技术：vue、nodejs、golang、mysql、oss、docker、json等。
-> 
-> 它提供了一系列集成平台，可以方便地进行定制d导航、云链、云存储、云图和云账户等工作。
-> 
-> 自由并逐渐变的强大。
+> 海芯导航支持自定义导航、自定义链接、云存储、云图、云账号管理
+
+Github：
+
+server端仓库：https://github.com/hixnav/hixnav
+
+web端仓库：https://github.com/hixnav/hixnav-web
+
+Gitee:
+
+server端仓库：https://gitee.com/hixnav/hixnav
+
+web端仓库: https://gitee.com/hixnav/hixnav-web
 
 ##### 邮件反馈
 ```shell
