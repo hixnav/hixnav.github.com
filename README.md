@@ -1,6 +1,6 @@
 # 海芯导航使用说明
 
-> 本说明书使用mdbook编写，[阅读说明](https://hixnav.github.io/)
+> 本说明书使用mdbook编写，[阅读说明]([https://hixnav.github.io/](https://hixnav.iflet.cn/))
 
 
 
